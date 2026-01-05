@@ -5,6 +5,12 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Writer AI</title>
     <link rel="stylesheet" href="styles.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Geist:wght@100..900&display=swap"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <div class="layout">
@@ -15,11 +21,11 @@
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               color="currentColor"
               fill="none"
-              stroke="#141B34"
+              stroke="#111"
               stroke-width="1.5"
             >
               <path
@@ -30,12 +36,12 @@
             </svg>
           </div>
           <div class="sidebar-middle">
-            <div class="flex">
+            <button class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 color="currentColor"
                 fill="none"
                 stroke="currentColor"
@@ -46,13 +52,13 @@
                 <path d="M12 4V20M20 12H4" />
               </svg>
               New chat
-            </div>
-            <div class="flex">
+            </button>
+            <button class="flex">
               <svg
                 xmlns="http://www.w3.org/2000/svg"
                 viewBox="0 0 24 24"
-                width="24"
-                height="24"
+                width="20"
+                height="20"
                 color="currentColor"
                 fill="none"
                 stroke="currentColor"
@@ -65,20 +71,20 @@
                   d="M21.5 12C21.5 17.2467 17.2467 21.5 12 21.5C10.3719 21.5 8.8394 21.0904 7.5 20.3687C5.63177 19.362 4.37462 20.2979 3.26592 20.4658C3.09774 20.4913 2.93024 20.4302 2.80997 20.31C2.62741 20.1274 2.59266 19.8451 2.6935 19.6074C3.12865 18.5818 3.5282 16.6382 2.98341 15C2.6698 14.057 2.5 13.0483 2.5 12C2.5 6.75329 6.75329 2.5 12 2.5C17.2467 2.5 21.5 6.75329 21.5 12Z"
                 />
               </svg>
-              chats
-            </div>
+              Chats
+            </button>
           </div>
         </div>
         <div class="sidebar-bottom">
-          <div class="flex">
+          <button class="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               color="currentColor"
               fill="none"
-              stroke="#141B34"
+              stroke="#111"
               stroke-width="1.5"
             >
               <path
@@ -93,16 +99,16 @@
               <path d="M19 17V17.8C19 19.5673 17.2091 21 15 21H13" />
             </svg>
             Support
-          </div>
-          <div class="flex">
+          </button>
+          <button class="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               color="currentColor"
               fill="none"
-              stroke="#141B34"
+              stroke="#111"
               stroke-width="1.5"
             >
               <path
@@ -113,20 +119,40 @@
               />
             </svg>
             Theme
-          </div>
+          </button>
         </div>
       </div>
       <div class="main">
         <div class="header">
-          <div class="flex">
+          <button class="flex">
             <svg
               xmlns="http://www.w3.org/2000/svg"
               viewBox="0 0 24 24"
-              width="24"
-              height="24"
+              width="20"
+              height="20"
               color="currentColor"
               fill="none"
-              stroke="#141B34"
+              stroke="#111"
+              stroke-width="1.5"
+            >
+              <path
+                d="M15 5C15 6.65685 13.2418 8.5 12 8.5C10.7582 8.5 9 6.65685 9 5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5Z"
+              />
+              <path
+                d="M16.0415 9C17.5645 10.3353 18.5514 12.5969 17.6652 14.7052C17.4742 15.1594 17.0361 15.4539 16.5514 15.4539C16.0585 15.4539 15.249 15.296 15.0917 15.9374L13.9945 20.4123C13.7657 21.3454 12.9434 22 12.0001 22C11.0567 22 10.2344 21.3454 10.0056 20.4123L8.90839 15.9374C8.7511 15.296 7.94155 15.4539 7.44868 15.4539C6.96396 15.4539 6.52588 15.1594 6.33494 14.7052C5.44873 12.5969 6.43564 10.3353 7.95863 9"
+              />
+            </svg>
+            Quick tour
+          </button>
+          <button class="flex">
+            <svg
+              xmlns="http://www.w3.org/2000/svg"
+              viewBox="0 0 24 24"
+              width="20"
+              height="20"
+              color="currentColor"
+              fill="none"
+              stroke="#111"
               stroke-width="1.5"
             >
               <path
@@ -144,29 +170,9 @@
               />
             </svg>
             Icognito
-          </div>
-          <div class="flex">
-            <svg
-              xmlns="http://www.w3.org/2000/svg"
-              viewBox="0 0 24 24"
-              width="24"
-              height="24"
-              color="currentColor"
-              fill="none"
-              stroke="#141B34"
-              stroke-width="1.5"
-            >
-              <path
-                d="M15 5C15 6.65685 13.2418 8.5 12 8.5C10.7582 8.5 9 6.65685 9 5C9 3.34315 10.3431 2 12 2C13.6569 2 15 3.34315 15 5Z"
-              />
-              <path
-                d="M16.0415 9C17.5645 10.3353 18.5514 12.5969 17.6652 14.7052C17.4742 15.1594 17.0361 15.4539 16.5514 15.4539C16.0585 15.4539 15.249 15.296 15.0917 15.9374L13.9945 20.4123C13.7657 21.3454 12.9434 22 12.0001 22C11.0567 22 10.2344 21.3454 10.0056 20.4123L8.90839 15.9374C8.7511 15.296 7.94155 15.4539 7.44868 15.4539C6.96396 15.4539 6.52588 15.1594 6.33494 14.7052C5.44873 12.5969 6.43564 10.3353 7.95863 9"
-              />
-            </svg>
-            Quick Tour
-          </div>
+          </button>
         </div>
-        <div class="chat-interface">Chat</div>
+        <div class="chat-interface"></div>
       </div>
     </div>
     <script src="./script.js"></script>
