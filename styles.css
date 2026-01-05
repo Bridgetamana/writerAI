@@ -56,8 +56,13 @@ body {
 }
 
 button {
-    background: transparent;
-    border: 0;
+  background: transparent;
+  border: 0;
+}
+
+:root {
+  --bg-color: #fff;
+  --text-color: #000;
 }
 
 .layout {
@@ -103,6 +108,7 @@ button {
 
 .main {
   width: 85%;
+  padding-right: 1rem;
 }
 
 .header {
@@ -113,14 +119,83 @@ button {
 }
 
 .chat-interface {
-  padding: 0 6px;
+  padding: 1rem;
   background-color: #f2f5ea;
-  height: calc(100vh - 22px);
+  height: calc(100vh - 94px);
   border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
 }
+
+/* .sidebar-top svg {
+  padding: 6px 8px;
+
+} */
 
 .flex {
   display: flex;
   gap: 6px;
   align-items: center;
+  padding: 6px 8px;
+}
+
+.interface-top {
+  display: flex;
+  flex-direction: column;
+  gap: 4rem;
+}
+
+.chat-menu {
+  display: flex;
+  justify-content: right;
+  align-items: end;
+}
+
+.greeting {
+  text-align: center;
+}
+
+.interface-bottom {
+  width: 100%;
+  max-width: 800px;
+  margin: 0 auto;
+  border: 1px solid black;
+  border-radius: 12px;
+  padding: 12px;
+}
+
+textarea {
+  width: 100%;
+  border: 0;
+  background: transparent;
+  outline: #fff;
+}
+
+.option-wrapper div {
+  display: none;
+}
+
+.option-wrapper button {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+}
+
+.action-btns {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.menu-btns {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+@media (max-width: 768px) {
+    .flex p {
+        display: none;
+    }
 }
